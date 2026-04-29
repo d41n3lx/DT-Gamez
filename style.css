@@ -50,19 +50,35 @@ body{
 .hero h2{font-size:2.5rem}
 .hero span{color:var(--primary)}
 
-/* GAMES */
-.game-grid{
-  display:flex;justify-content:center;gap:30px;flex-wrap:wrap;
+.game-card img{
+  width:80px;
+  height:80px;
+  border-radius:12px;
+  object-fit:cover;
+  margin-bottom:10px;
+  border:2px solid var(--primary);
+}
+.games{
+  background: 
+    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
+    url("https://images.unsplash.com/photo-1542751371-adc38448a05e");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
 }
 .game-card{
-  background:#0f172a;padding:15px;border-radius:10px;
-  transition:.3s;cursor:pointer;
-}
-.game-card:hover{
-  transform:translateY(-8px) scale(1.05);
-  box-shadow:0 0 15px var(--primary);
+  background:rgba(15,23,42,0.8);
+  backdrop-filter:blur(6px);
+  padding:15px;
+  border-radius:12px;
+  transition:.3s;
+  border:1px solid rgba(0,245,255,0.1);
 }
 
+.game-card:hover{
+  transform:translateY(-10px) scale(1.05);
+  box-shadow:0 0 25px var(--primary);
+}
 /* GALLERY */
 .gallery-grid{
   display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;
