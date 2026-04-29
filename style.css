@@ -127,6 +127,9 @@ body{
 }
 
 /* ================= GALLERY ================= */
+.gallery-text{
+  margin-top:-20px;
+}
 .gallery-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
